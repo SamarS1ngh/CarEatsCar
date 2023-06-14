@@ -5298,7 +5298,7 @@ WheelJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.00000024283509, y: 0.0000005657512}
+  m_ConnectedAnchor: {x: 0.0000015291299, y: -0.00000047650767}
   m_Suspension:
     m_DampingRatio: 0.35
     m_Frequency: 2
@@ -5322,7 +5322,7 @@ WheelJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.00000064696724, y: -0.0000008564184}
+  m_ConnectedAnchor: {x: 0.0000004057564, y: 0.00000026523028}
   m_Suspension:
     m_DampingRatio: 0.35
     m_Frequency: 2
@@ -5345,8 +5345,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _frontTireRB: {fileID: 1762383544}
   _backTireRB: {fileID: 1616856073}
+  _frontTireRB1: {fileID: 0}
+  _backTireRB1: {fileID: 0}
   carRB: {fileID: 900459703}
-  _speed: 250
+  _speed: 400
   _rotationSpeed: 250
 --- !u!1 &926902934
 GameObject:
