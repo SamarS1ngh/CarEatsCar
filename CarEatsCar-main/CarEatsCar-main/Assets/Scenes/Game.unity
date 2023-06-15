@@ -7328,8 +7328,8 @@ WheelJoint2D:
   m_ConnectedRigidBody: {fileID: 1616856073}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: -0.2, y: 0.3}
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: -0.2, y: -0.05}
   m_ConnectedAnchor: {x: 0.0000015291299, y: -0.00000047650767}
   m_Suspension:
     m_DampingRatio: 0.35
@@ -7337,7 +7337,7 @@ WheelJoint2D:
     m_Angle: 90
   m_UseMotor: 0
   m_Motor:
-    m_MotorSpeed: 0
+    m_MotorSpeed: 1000
     m_MaximumMotorForce: 10000
 --- !u!235 &900459706
 WheelJoint2D:
@@ -7352,8 +7352,8 @@ WheelJoint2D:
   m_ConnectedRigidBody: {fileID: 1762383544}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 1.1, y: 0.3}
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 1.1, y: -0.15}
   m_ConnectedAnchor: {x: 0.0000004057564, y: 0.00000026523028}
   m_Suspension:
     m_DampingRatio: 0.35
@@ -7361,7 +7361,7 @@ WheelJoint2D:
     m_Angle: 90
   m_UseMotor: 0
   m_Motor:
-    m_MotorSpeed: 0
+    m_MotorSpeed: 1500
     m_MaximumMotorForce: 10000
 --- !u!114 &900459707
 MonoBehaviour:
@@ -7393,8 +7393,8 @@ MonoBehaviour:
   carRB: {fileID: 900459703}
   _speed: 400
   _rotationSpeed: 300
---- !u!60 &900459709
-PolygonCollider2D:
+--- !u!61 &900459709
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7406,7 +7406,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.46804368, y: 0.32862663}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7416,13 +7416,9 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 1}
-      - {x: -0.95105654, y: 0.30901697}
-      - {x: -0.5877852, y: -0.80901706}
-      - {x: 0.58778536, y: -0.80901694}
-      - {x: 0.9510565, y: 0.30901712}
+  serializedVersion: 2
+  m_Size: {x: 2.6530912, y: 1.6572533}
+  m_EdgeRadius: 0
 --- !u!1 &926902934
 GameObject:
   m_ObjectHideFlags: 0
