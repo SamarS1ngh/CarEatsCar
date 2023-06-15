@@ -5,6 +5,7 @@ using UnityEngine;
     public class DestroyCar : MonoBehaviour
     {
 
+       
         public HealthBar healthbar;
         public float currHealth;
 
