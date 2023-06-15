@@ -6,17 +6,12 @@ using UnityEngine.SceneManagement;
 public class levelManager : MonoBehaviour
 {
     public string sceneName;
-    void start()
-    {
-
-    }
-
-    void update()
-    {
-
-    }
+   
     public void changeScene()
     {
         SceneManager.LoadScene(sceneName);
+    }
+    public void title(){
+        SceneManager.LoadScene("UI");
     }
 }
