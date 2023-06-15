@@ -7172,7 +7172,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3
@@ -7212,8 +7212,8 @@ WheelJoint2D:
   m_ConnectedRigidBody: {fileID: 1616856073}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 1.1, y: 0.3}
   m_ConnectedAnchor: {x: 0.0000015291299, y: -0.00000047650767}
   m_Suspension:
     m_DampingRatio: 0.35
@@ -7236,8 +7236,8 @@ WheelJoint2D:
   m_ConnectedRigidBody: {fileID: 1762383544}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: -0.2, y: 0.34}
   m_ConnectedAnchor: {x: 0.0000004057564, y: 0.00000026523028}
   m_Suspension:
     m_DampingRatio: 0.35
@@ -14477,7 +14477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteor: {fileID: 900459702}
-  speed: 3
+  speed: 5
 --- !u!114 &2132250366
 MonoBehaviour:
   m_ObjectHideFlags: 0

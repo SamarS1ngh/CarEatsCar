@@ -5,7 +5,7 @@ using UnityEngine;
 public class Chase : MonoBehaviour
 {
     [SerializeField] private GameObject meteor;
-    [SerializeField] private float speed = 1.5f;
+    [SerializeField] private float speed = 3f;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +13,7 @@ public class Chase : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         transform.position = Vector2.MoveTowards(transform.position, meteor.transform.position, speed * Time.deltaTime);
     }

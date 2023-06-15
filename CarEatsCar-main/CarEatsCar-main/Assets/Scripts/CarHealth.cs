@@ -16,8 +16,8 @@ public class CarHealth : MonoBehaviour
         healthbar.setMaxHealth(maxHealth);
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(other.CompareTag("Enemy Car")){
+    public void OnTriggerEnter2D(Collider2D other) {
+        if(other.CompareTag("EnemyCar")){
             currHealth -= 20;
             healthbar.SetHealth(currHealth);
         }
