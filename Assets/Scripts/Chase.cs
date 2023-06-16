@@ -15,6 +15,7 @@ public class Chase : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+       
         transform.position = Vector2.MoveTowards(transform.position, meteor.transform.position, speed * Time.deltaTime);
-    }
+          }
 }

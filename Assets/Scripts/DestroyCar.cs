@@ -1,24 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-    public class DestroyCar : MonoBehaviour
+public class DestroyCar : MonoBehaviour
+{
+    private float Count = 5;
+
+    private void OnTriggerEnter2D(Collider2D Vehicle)
     {
-        private float Count = 5;
-        private void OnTriggerEnter2D(Collider2D Vehicle)
+        if (Vehicle.tag == "Player")
         {
-            if (Vehicle.tag == "Player")
-            {
-              
-               Count--;
-            }
+            Count--;
+        }
 
-            if (Count == 0)
-            {
-                Destroy(Vehicle.gameObject);
-            }
+        if (Count == 0)
+        {
+            GameObject taggedObject = Vehicle.gameObject;
+            Destroy(taggedObject);
         }
     }
-
-
+}
 
