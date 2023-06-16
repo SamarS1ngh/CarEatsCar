@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Undefined
   - EnemyCar
+  - MyCoin
+  - Ground
   layers:
   - Default
   - TransparentFX
