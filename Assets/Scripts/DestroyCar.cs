@@ -4,21 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class DestroyCar : MonoBehaviour
-{
-    private float Count = 5;
+    {   
+        private float Count = 5;
 
-    private void OnTriggerEnter2D(Collider2D Vehicle)
-    {
-        if (Vehicle.tag == "Player")
+        private void OnTriggerEnter2D(Collider2D Vehicle)
         {
-            Count--;
-        }
+            if (Vehicle.tag == "Player")
+            {
+              
+               Count--;
+            }
 
-        if (Count == 0)
-        {
-            GameObject taggedObject = Vehicle.gameObject;
-            Destroy(taggedObject);
+            if (Count == 0)
+            {
+            Debug.Log("sdvsk");
+                Destroy(Vehicle.gameObject);
+            }
         }
     }
-}
+
+
 

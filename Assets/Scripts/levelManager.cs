@@ -19,4 +19,8 @@ public class levelManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+    public void GameOver()
+    {
+        changeScene();
+    }
 }
