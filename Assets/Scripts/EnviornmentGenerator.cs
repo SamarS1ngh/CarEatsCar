@@ -11,14 +11,20 @@ public class EnviornmentGenerator : MonoBehaviour
    [SerializeField, Range(3f, 100f)] private int _levelLength = 50;
    [SerializeField, Range(1f, 50f)] private float _xMultiplier = 2f;
    [SerializeField, Range(1f, 50f)] private float _yMultiplier = 2f;
-   [SerializeField, Range(0f, 1f)] private float _curveSmoothness = 0.5f;
-   [SerializeField] private float _noiseStep = 0.5f;
+   [SerializeField, Range(0f, 1f)] private float _curveSmoothness = 0.35f;
+   [SerializeField] public float _noiseStep = 6.26f;
    [SerializeField] private float _bottom = 10f;
 
    private Vector3 lastPos;
 
+  
+
    private void OnValidate() {
-    _spriteShapeController.spline .Clear();
+    UpdateShape();
+   } 
+   
+    void UpdateShape(){
+ _spriteShapeController.spline .Clear();
 
             for (int i = 0; i < _levelLength; i++)
             {
@@ -38,9 +44,19 @@ public class EnviornmentGenerator : MonoBehaviour
 
               _spriteShapeController.spline.InsertPointAt(_levelLength, new Vector3(lastPos.x, transform.position.y - _bottom));
                  _spriteShapeController.spline.InsertPointAt(_levelLength + 1, new Vector3(transform.position.x  , transform.position.y - _bottom));
-   } 
    
+   }
 
+
+   void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            // Increase the noise step by 0.5f
+            _noiseStep += 0.1f;
+          //  UpdateShape();
+        }
+    }
     
    
 }
