@@ -5,13 +5,13 @@
 // public class stagechanger : MonoBehaviour
 // {
      
-//      public Carpos carpos;
+//    //  public Carpos carpos;
 //      public EnviornmentGenerator eg;
 
 //     void OnTriggerEnter2D(Collider2D other) {
 //     if(other.CompareTag("Player")){
         
-//         carpos.ResetPos();
+//         eg._noiseStep += 0.5f; 
 //     }
 //    }
 // }
